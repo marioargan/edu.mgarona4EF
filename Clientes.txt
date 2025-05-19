@@ -1,0 +1,2 @@
+nombre;apellidos;contraseña;email
+alberto;mendez;654654;mendez
