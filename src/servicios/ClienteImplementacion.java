@@ -4,7 +4,9 @@ import controladores.Inicio;
 import dto.Dto;
 
 public class ClienteImplementacion implements ClienteInterfaz {
-	
+	/*
+	 * Metodo encargado de iniciar sesion como cliente
+	 */
 	public void inicioSesionCliente() {
 		System.out.println("Inicio de sesion");
 		System.out.println("Introduzca el email: ");

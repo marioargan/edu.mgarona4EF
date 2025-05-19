@@ -1,7 +1,9 @@
 package servicios;
 
 import controladores.Inicio;
-
+/*
+ * Clase encargada de mostrar el menu
+ */
 public class MenuImplementacion implements MenuInterfaz {
 	
 	@Override

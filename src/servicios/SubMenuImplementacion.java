@@ -1,7 +1,9 @@
 package servicios;
 
 import controladores.Inicio;
-
+/*
+ * Clase encargada de mostrar el submenu y sus funcionalidades
+ */
 public class SubMenuImplementacion implements SubMenuInterfaz {
 	
 	@Override

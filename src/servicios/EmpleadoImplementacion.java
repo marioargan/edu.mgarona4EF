@@ -12,6 +12,10 @@ import controladores.Inicio;
 import dto.Dto;
 
 public class EmpleadoImplementacion implements EmpleadoInterfaz {
+	
+	/*
+	 * Metodo encargado de crear nuevos clientes y añadirlos tanto al clientes.txt como a la lista
+	 */
 	public void altaCliente() {
 	    Path ruta = Paths.get(Inicio.ruta);
 	    try {
@@ -52,13 +56,18 @@ public class EmpleadoImplementacion implements EmpleadoInterfaz {
 	    }
 	}
 
-
+	/*
+	 * Mentodo encargado de mostrar todos los usuario que se encuentran en la lista
+	 */
 	@Override
     public void filtrar() {
         for (Dto cliente : Inicio.clientes) {
             System.out.println(cliente.toString());
         }
     }
+	/*
+	 * Metodo encargado de eliminar a los clientes
+	 */
 	@Override
 	public void bajaCliente() {
         System.out.print("Introduzca el nombre del cliente a dar de baja: ");
@@ -79,7 +88,10 @@ public class EmpleadoImplementacion implements EmpleadoInterfaz {
             }
         }
     }
-
+	
+	/*
+	 * metodo encargado de cargar en la lista los cliente que se encuentran en el archivo clientes.txt
+	 */
 	@Override
     public boolean cargarClientes() {
         boolean estaLeido = false;
@@ -116,7 +128,9 @@ public class EmpleadoImplementacion implements EmpleadoInterfaz {
 
         return estaLeido;
     }
-
+	/*
+	 * Metodo encargado de guardar en un archivoLog.txt los errores que van sucediendo durante el funcionamiento de la aplicacion
+	 */
 	public static void registroLog(String mensaje){
 		
 		Path ruta = Paths.get(Inicio.rutaLog);
